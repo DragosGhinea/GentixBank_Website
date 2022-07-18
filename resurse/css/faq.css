@@ -1,0 +1,43 @@
+#faq{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px;
+    margin: 10%;
+    margin-top: 300px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+h2{
+    background-color: #BBE6E4;
+    margin-top: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+article{
+    border-top: 2px solid grey;
+    padding-bottom: 20px;
+    display: inline-block;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #FF66B3;
+    color: white;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+}

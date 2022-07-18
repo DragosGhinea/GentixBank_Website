@@ -1,0 +1,80 @@
+@media screen and (min-width: 1100px){
+    #oferte{
+        margin-top: 200px;
+    }
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    #contPersonal ul,#contBusiness ul{
+        display: inline-block;
+        list-style-type: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 0;
+        padding: 20px;
+        border-radius: 20px;
+        margin-right: 50px;
+        align-self: center
+    }
+
+    .titlu-ul{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #contPersonal ul li:not(:first-child),#contBusiness ul li:not(:first-child){
+        line-height: 50px;
+        height: 50px;
+    }
+
+    #contPersonal ul>li:not(:first-child)::before,#contBusiness ul>li:not(:first-child)::before{
+        content: '✔️ ';
+    }
+
+    #contPersonal img,#contBusiness img{
+        width: 40rem;
+        
+    }
+
+    #oferte{
+        padding-right: 20%;
+        padding-left: 20%;
+        margin-bottom: 10rem;
+    }
+
+    #oferte>h1{
+        text-align: center;
+    }
+
+    #contBusiness{
+        margin-top: 50px;
+    }
+
+
+    footer{
+        margin-top: 100px;
+        background-color: #FF66B3;
+        color: white;
+        line-height: 70px;
+        height: 70px;
+        text-align: center;
+    }
+}

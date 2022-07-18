@@ -1,0 +1,222 @@
+@media screen and (min-width: 600px){
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        height: 100%;
+    }
+
+    body{
+        height: 100%;
+    }
+
+    header{
+        height: 100%;
+    }
+
+
+    #coperta{
+        z-index: 1;
+        height: 100%;
+        text-align: center;
+        min-height: 100%;
+        transition: 0.7s;
+        background-attachment: fixed;
+        background-position: top;
+    }
+
+    #coperta>h1{
+        margin: 0;
+        position: relative;
+        font-size: 5rem;
+        color: white;
+        top: 50%;
+    }
+
+    #coperta>span{
+        font-size: 1.2rem;
+        color: white;
+        position: relative;
+        top: 52%;
+    }
+
+    #coperta{
+        grid-area: coperta;
+    }
+
+    #prezentare-generala{
+        grid-area: prezentare;
+        padding-top: 5%;
+        padding-right: 15%;
+        padding-left: 15%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    #prezentare-generala>h1{
+        font-size: 35px;
+    }
+
+    #prezentare-generala>p{
+        text-align: justify;
+        margin-top: 3em;
+        font-size: 20px;
+    }
+
+    #prezentare-generala>p>img{
+        width: 35rem;
+        float: right;
+        vertical-align: top;
+        margin-left: 7%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 15px;
+
+        animation: tiltA alternate 3s infinite;
+    }
+
+    @keyframes tiltA {
+        50% {transform: skew(-0.01turn, 5deg);}
+        100% {transform: skew(0.01turn, -5deg);}
+    }
+
+    @media screen and (max-width: 1200px){
+        #prezentare-generala>p>img{
+            float: none;
+            display: block;
+            margin: auto;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+
+    #features{
+        grid-area: features;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    #features>h1{
+        font-size: 35px;
+    }
+
+    #features>table{
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+    }
+
+    table td + td { border-left:2px solid grey; }
+
+    #features>table th{
+        font-size: 25px;
+        background-color: #bbe6e4;
+    }
+
+    #features>table tr{
+        line-height: 50px;
+        height: 50px;
+    }
+
+    #features>table tr:nth-child(odd){
+        background-color: #f0f6f6;
+    }
+
+    #noutati{
+        margin-right: 1rem;
+        margin-left: 4rem;
+        grid-area: noutati;
+        overflow:auto;
+        white-space:nowrap;
+
+        border-radius: 20px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    #noutati>h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #container-noutati{
+        overflow-x:auto;
+        overflow-y: hidden;
+        white-space:nowrap;
+        height: 73%;
+    }
+
+    #container-noutati>*{
+        display: inline-block;
+        white-space:normal;
+        vertical-align: top;
+        width: 200px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 15px;
+        margin: 20px;
+    }
+    
+    #container-noutati>*>h2{
+        color: #084b83;
+    }
+
+    #recenzii{
+        margin-left: 1rem;
+        margin-right: 4rem;
+        grid-area: recenzii;
+        overflow:auto;
+        white-space:nowrap;
+
+        border-radius: 20px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    #recenzii>h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #container-recenzii{
+        height: 73%;
+        overflow-x:auto;
+        overflow-y: hidden;
+        white-space:nowrap;
+    }
+
+    #container-recenzii>*{
+        display: inline-block;
+        white-space:normal;
+        vertical-align: top;
+        width: 200px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 15px;
+        margin: 20px;
+    }
+    
+    #container-recenzii>*>h3{
+        color: #084b83;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas:
+            'coperta coperta'
+            'prezentare prezentare'
+            'features features'
+            'noutati recenzii';
+    }
+
+    footer{
+        margin-top: 50px;
+        background-color: #FF66B3;
+        color: white;
+        line-height: 70px;
+        height: 70px;
+        text-align: center;
+    }
+}

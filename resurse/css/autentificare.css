@@ -1,0 +1,71 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#s-autentificare{
+    padding: 30px;
+    margin: 10%;
+    margin-top: 200px;
+    height: 80%;
+}
+
+#logare{
+    background-color: #42bfdd;
+    color: white;
+    transition: all 0.5s;
+}
+
+#inregistrare{
+    background-color: #084b83;
+    color: white;
+    transition: all 0.5s;
+}
+
+#logare:hover, #inregistrare:hover{
+    background-color: #bbe6e4;
+    transition: all 0.5s;
+    color: black;
+}
+
+#logare,#inregistrare{
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#autentificare{
+    margin-top: 50px;
+    position: relative;
+}
+
+.form-component-input{
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+    background-color: #FF66B3;
+    color: white;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+}
